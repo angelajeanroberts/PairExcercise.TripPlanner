@@ -13,12 +13,14 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
 
-const markerDomEl = document.createElement("div"); // Create a new, detached DIV
-markerDomEl.style.width = "32px";
-markerDomEl.style.height = "39px";
-markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
+
+// const markerDomEl = document.createElement("div"); // Create a new, detached DIV
+// markerDomEl.style.width = "32px";
+// markerDomEl.style.height = "39px";
+// markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
 
 // const marker = new mapboxgl.Marker(buildHotel()).setLngLat(coordinates()).addTo(map);
+
 buildMarker('hotel', [-74.011589, 40.703137]).addTo(map)
 console.log(buildMarker('hotel', [-74.011589, 40.703137]).addTo(map));
